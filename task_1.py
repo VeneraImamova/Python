@@ -9,7 +9,7 @@ number_day = 0
 cond = False
 while cond == False:
     number_day = int(input("Введите порядковый номер дня недели (от 1 до 7): "))
-    if number_day >= 8:
+    if number_day >= 8 or number_day <= 0:
         print("Такого дня недели нет")
         print("Повторите ввод")
     else:
