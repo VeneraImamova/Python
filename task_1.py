@@ -6,10 +6,15 @@
 # - 1 -> нет
 
 number_day = 0
-cond = false
-while cond == false:
-    number_day = input("Введите порядковый номер дня недели (от 1 до 7): ")
+cond = False
+while cond == False:
+    number_day = int(input("Введите порядковый номер дня недели (от 1 до 7): "))
     if number_day >= 8:
-        print("такого дня недели нет")
+        print("Такого дня недели нет")
+        print("Повторите ввод")
     else:
-        cond = true
+        cond = True
+if number_day == 6 or number_day == 7:
+    print("Данный день недели является выходным")
+else:
+    print("Данный день недели НЕ является выходным")
