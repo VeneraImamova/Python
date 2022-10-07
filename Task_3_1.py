@@ -7,7 +7,7 @@
 
 import random
 def get_numbers(count):
-    ls = random.sample(range(count), count)
+    ls = random.sample(range(count*3), count)
     return ls
 
 def get_list_sum(list, count):
