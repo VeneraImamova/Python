@@ -5,7 +5,7 @@
 
 import random
 def get_numbers(count):
-    ls = random.sample(range(count), count)
+    ls = random.sample(range(count*5), count)
     return ls
 
 def find_product_pairs(list, count):
