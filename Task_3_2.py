@@ -12,6 +12,8 @@ def find_product_pairs(list, count):
     product = []
     for i in range(int(count/2)):
         product.append(list[i]*list[-(i+1)])
+    if count%2 == 1:
+        product.append(list[int((count/2))])
     return product
 
 
