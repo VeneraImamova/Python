@@ -6,9 +6,9 @@
 # 3*x^9 + 3*x^8 - 2*x^6 + 1*x^5 - 3*x^4 - 3*x^2 + 3 = 0
 # 4*x^5 + 1*x^4 - 3*x^3 - 3 = 0
 # 4*x^2 - 4 = 0
-import random
-from random import randint
 
+from random import randint
+from random import choice
 def get_str(number):
     symbol_list = ["-", "+"]
     with open("temp_1.txt", "a", encoding="utf-8") as output:
@@ -18,7 +18,7 @@ def get_str(number):
         while number > 0:
             arg = randint(0, 10)
             if arg > 0:
-                output.write(f"{arg}*x^{number} {random.choice(symbol_list)} ")
+                output.write(f"{arg}*x^{number} {choice(symbol_list)} ")
             number = number -1
         else:
             arg = randint(0, 10)
